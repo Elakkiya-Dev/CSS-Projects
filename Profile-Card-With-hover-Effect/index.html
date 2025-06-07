@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile Card</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      width: 300px;
+      height: 400px;
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h2 {
+      margin: 15px 0 5px;
+      font-size: 24px;
+    }
+
+    .card h4 {
+      margin: 0;
+      font-weight: normal;
+      color: #777;
+    }
+
+    .card p {
+      padding: 15px;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="images/profile-pic.jpg" alt="Profile Picture">
+    <h2>John Doe</h2>
+    <h4>Frontend Developer</h4>
+    <p>Loves CSS challenges and building beautiful UIs with pure CSS.</p>
+  </div>
+
+</body>
+</html>
